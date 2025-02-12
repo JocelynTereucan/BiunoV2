@@ -9,3 +9,11 @@ public class BotonOlvidasteContraseña : MonoBehaviour
         // SceneManager.LoadScene("PantallaCambioContraseña"); // Activa esto cuando tengas la escena creada
     }
 }
+
+public class GestorPantallas : MonoBehaviour
+{
+    public void CambiarPantalla(string nombrePantalla)
+    {
+        SceneManager.LoadScene(nombrePantalla);
+    }
+}
