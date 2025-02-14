@@ -65,9 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AppManager.cs" />
+    <Compile Include="Assets\Scripts\LoginManager.cs" />
     <Compile Include="Assets\Scripts\MostrarContraseña.cs" />
-    <Compile Include="Assets\Scripts\VerificaCredenciales.cs" />
+    <Compile Include="Assets\Scripts\InputFieldHandler.cs" />
     <Compile Include="Assets\Scripts\GestorPantallas.cs" />
+    <Compile Include="Assets\Scripts\recordad_credenciales.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

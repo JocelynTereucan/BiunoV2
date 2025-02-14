@@ -15,8 +15,8 @@ public class LoginManager : MonoBehaviour
 
     public void IniciarSesion()
     {
-        string correoIngresado = input_Correo.text;
-        string contraseñaIngresada = input_Contraseña.text;
+        string correoIngresado = input_Correo.text.Trim(); // Evitar espacios vacíos
+        string contraseñaIngresada = input_Contraseña.text.Trim();
 
         if (correoIngresado == correoCorrecto && contraseñaIngresada == contraseñaCorrecta)
         {
@@ -24,18 +24,33 @@ public class LoginManager : MonoBehaviour
         }
         else
         {
-            MostrarError();
+            MostrarError("Correo o contraseña incorrectos.");
         }
     }
 
-    void MostrarError()
+    public void OlvidasteContrasena()
     {
-        
-        Panel.SetActive(true);
+        GestorPantallas.CambiarPantalla("CambioContrasena");
+    }
+
+    void MostrarError(string mensaje)
+    {
+        if (Panel != null && mensajeError != null)
+        {
+            mensajeError.text = mensaje;
+            Panel.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("Panel o mensajeError no están asignados en Unity.");
+        }
     }
 
     public void CerrarError()
     {
-        Panel.SetActive(false);
+        if (Panel != null)
+        {
+            Panel.SetActive(false);
+        }
     }
 }
