@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{55251574-41F5-6439-AEA7-663594B390CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirebaseMessagingActivityGenerator", "FirebaseMessagingActivityGenerator.csproj", "{FDE8C563-F354-63BF-64D8-4E4EEF9A1F94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{55251574-41F5-6439-AEA7-663594B390CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55251574-41F5-6439-AEA7-663594B390CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55251574-41F5-6439-AEA7-663594B390CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE8C563-F354-63BF-64D8-4E4EEF9A1F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE8C563-F354-63BF-64D8-4E4EEF9A1F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE8C563-F354-63BF-64D8-4E4EEF9A1F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE8C563-F354-63BF-64D8-4E4EEF9A1F94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
