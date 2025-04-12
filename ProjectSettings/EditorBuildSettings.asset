@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/actividad1/Actividad1.unity"
+    guid: e2b700c53364f004598aca888c116a2a
+  - enabled: 1
+    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/inicio/inicio.unity"
+    guid: 0a7a7d34bad6e6c4dade6271563982d4
   m_configObjects: {}
