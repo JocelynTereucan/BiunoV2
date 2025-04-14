@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+
 
 public class ArrastrarUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
+    public DatabaseManager dbManager;
     private RectTransform rectTransform;
     private Canvas canvas;
-    private Vector2 offset;
-    private bool arrastrando = false;
+    public GameObject panelListo;
+    public AudioSource audioListo;
 
     private void Awake()
     {
@@ -16,32 +19,44 @@ public class ArrastrarUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            rectTransform,
-            eventData.position,
-            eventData.pressEventCamera,
-            out Vector2 localPoint
-        );
-        offset = rectTransform.anchoredPosition - localPoint;
-        arrastrando = true;
+        OnDrag(eventData);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (!arrastrando || canvas == null) return;
-
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
             canvas.transform as RectTransform,
             eventData.position,
             eventData.pressEventCamera,
-            out Vector2 localPoint
-        );
-
-        rectTransform.anchoredPosition = localPoint + offset;
+            out Vector2 localPoint))
+        {
+            rectTransform.anchoredPosition = localPoint;
+        }
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        arrastrando = false;
+        if (panelListo != null)
+        {
+            panelListo.SetActive(true);
+        }
+
+        if (audioListo != null)
+        {
+            audioListo.Play();
+        }
+    }
+    public void ConfirmarEvaluacion()
+    {
+        SceneManager.LoadScene("PantallaDatos");
+        dbManager.EvaluarPosicion(this.gameObject);
+        panelListo.SetActive(false);
+        // Aquí puedes mostrar el panel de resultado si quieres
+    }
+
+    // Método que se llama si el niño presiona "No"
+    public void Reintentar()
+    {
+        panelListo.SetActive(false);
     }
 }

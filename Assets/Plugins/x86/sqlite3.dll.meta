@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 5e7beea9b436402a98eb39f3588f546a
-labels:
-- gvh
-- gvh_version-12.6.0
-- gvhp_exportpath-Firebase/Plugins/x86_64/FirebaseCppApp-12_6_0.bundle
-timeCreated: 1480838400
+guid: c25dcf4d650b0554c8a62054fc6063c5
+timeCreated: 1445131383
+licenseType: Free
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
@@ -19,15 +16,15 @@ PluginImporter:
       enabled: 0
       settings: {}
     Editor:
-      enabled: 1
+      enabled: 0
       settings:
-        CPU: AnyCPU
+        CPU: x86
         DefaultValueInitialized: true
         OS: AnyOS
     Linux:
       enabled: 0
       settings:
-        CPU: None
+        CPU: x86
     Linux64:
       enabled: 0
       settings:
@@ -39,25 +36,23 @@ PluginImporter:
     OSXIntel:
       enabled: 0
       settings:
-        CPU: None
-    OSXIntel64:
-      enabled: 1
-      settings:
-        CPU: x86_64
-    OSXUniversal:
-      enabled: 1
-      settings:
         CPU: AnyCPU
-    Web:
+    OSXIntel64:
       enabled: 0
-      settings: {}
-    WebStreamed:
+      settings:
+        CPU: None
+    OSXUniversal:
       enabled: 0
-      settings: {}
+      settings:
+        CPU: None
+    SamsungTV:
+      enabled: 0
+      settings:
+        STV_MODEL: STANDARD_13
     Win:
       enabled: 0
       settings:
-        CPU: None
+        CPU: AnyCPU
     Win64:
       enabled: 0
       settings:
@@ -66,16 +61,15 @@ PluginImporter:
       enabled: 0
       settings:
         CPU: AnyCPU
+        DontProcess: False
+        PlaceholderPath: 
+        SDK: AnySDK
+        ScriptingBackend: AnyScriptingBackend
     iOS:
       enabled: 0
       settings:
-        CompileFlags:
-        FrameworkDependencies:
-    tvOS:
-      enabled: 0
-      settings:
-        CompileFlags:
-        FrameworkDependencies:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+        CompileFlags: 
+        FrameworkDependencies: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

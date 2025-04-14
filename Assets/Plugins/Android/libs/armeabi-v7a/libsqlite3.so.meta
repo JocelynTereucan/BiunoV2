@@ -1,10 +1,5 @@
 fileFormatVersion: 2
-guid: 8cf5d226b6f24739a7f84ef8351c274e
-labels:
-- gvh
-- gvh_version-12.6.0
-- gvhp_exportpath-Firebase/Plugins/x86_64/FirebaseCppApp-12_6_0.so
-timeCreated: 1480838400
+guid: d8e30dd8798449d419708370320bd0db
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
@@ -12,14 +7,14 @@ PluginImporter:
   isPreloaded: 0
   platformData:
     Android:
-      enabled: 0
+      enabled: 1
       settings:
-        CPU: AnyCPU
+        CPU: ARMv7
     Any:
       enabled: 0
       settings: {}
     Editor:
-      enabled: 1
+      enabled: 0
       settings:
         CPU: AnyCPU
         DefaultValueInitialized: true
@@ -27,55 +22,49 @@ PluginImporter:
     Linux:
       enabled: 0
       settings:
-        CPU: None
+        CPU: x86
     Linux64:
-      enabled: 1
+      enabled: 0
       settings:
         CPU: x86_64
-    LinuxUniversal:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
     OSXIntel:
       enabled: 0
       settings:
-        CPU: None
+        CPU: AnyCPU
     OSXIntel64:
       enabled: 0
       settings:
-        CPU: None
-    OSXUniversal:
+        CPU: AnyCPU
+    SamsungTV:
       enabled: 0
       settings:
-        CPU: None
-    Web:
+        STV_MODEL: STANDARD_13
+    WP8:
       enabled: 0
-      settings: {}
-    WebStreamed:
-      enabled: 0
-      settings: {}
+      settings:
+        CPU: AnyCPU
+        DontProcess: False
+        PlaceholderPath: 
     Win:
       enabled: 0
       settings:
-        CPU: None
+        CPU: AnyCPU
     Win64:
       enabled: 0
       settings:
-        CPU: None
+        CPU: AnyCPU
     WindowsStoreApps:
       enabled: 0
       settings:
         CPU: AnyCPU
+        DontProcess: False
+        PlaceholderPath: 
+        SDK: AnySDK
     iOS:
       enabled: 0
       settings:
-        CompileFlags:
-        FrameworkDependencies:
-    tvOS:
-      enabled: 0
-      settings:
-        CompileFlags:
-        FrameworkDependencies:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+        CompileFlags: 
+        FrameworkDependencies: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

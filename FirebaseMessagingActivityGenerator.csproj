@@ -554,6 +554,10 @@
       <HintPath>Assets\Firebase\Plugins\Firebase.Crashlytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="SqliteForUnity3D">
+      <HintPath>Assets\Plugins\SqliteForUnity3D.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>

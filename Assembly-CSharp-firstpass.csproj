@@ -19,7 +19,7 @@
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -54,7 +54,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2022.3.42f1</UnityVersion>
   </PropertyGroup>
@@ -64,97 +64,31 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.42f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AppManager.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\inicio\ControlPantallasOrientacion.cs" />
-    <Compile Include="Assets\Scripts\LoginManager.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad1\MostrarResultado.cs" />
-    <Compile Include="Assets\Scripts\MostrarContraseña.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad1\ArrastrarObjeto.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad1\ResultadoEvaluacion.cs" />
-    <Compile Include="Assets\Scripts\InputFieldHandler.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\inicio\audio\ReproductorAudio.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad1\DatabaseManager.cs" />
-    <Compile Include="Assets\Scripts\GestorPantallas.cs" />
-    <Compile Include="Assets\Scripts\recordad_credenciales.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad1\VolverAPantalla.cs" />
-    <Compile Include="Assets\Scripts\RecuperarContraseña.cs" />
+    <Compile Include="Assets\Plugins\SQLite4Unity3d-master(1)\SQLite4Unity3d-master\Example\Assets\Scripts\SQLite.cs" />
+    <Compile Include="Assets\Plugins\SQLite4Unity3d-master(1)\SQLite4Unity3d-master\Example\Assets\Scripts\CreateDBScript.cs" />
+    <Compile Include="Assets\Plugins\SQLite4Unity3d-master(1)\SQLite4Unity3d-master\Example\Assets\Scripts\Person.cs" />
+    <Compile Include="Assets\Plugins\SQLite4Unity3d-master(1)\SQLite4Unity3d-master\Example\Assets\Scripts\ExistingDBScript.cs" />
+    <Compile Include="Assets\Plugins\SQLite4Unity3d-master(1)\SQLite4Unity3d-master\Example\Assets\Scripts\DataService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Functions.dll" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Messaging.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-functions-unity\maven-metadata.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppInstallations.dll" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppFirestore.dll" />
-    <None Include="Assets\Firebase\Plugins\Firebase.Messaging.dll" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.AppCheck.dll" />
-    <None Include="Assets\Firebase\Plugins\Firebase.Analytics.dll" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Analytics.dll" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppStorage.dll" />
-    <None Include="Assets\Firebase\Plugins\Firebase.App.dll" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppDynamicLinks.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\Firebase\Plugins\Firebase.Functions.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-firestore-unity\maven-metadata.xml" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppAppCheck.dll" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppAnalytics.dll" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.RemoteConfig.dll" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Firestore.dll" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppMessaging.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Firebase\Plugins\Firebase.DynamicLinks.dll" />
-    <None Include="Assets\Firebase\Plugins\Firebase.TaskExtension.dll" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Installations.dll" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-messaging-unity\maven-metadata.xml" />
-    <None Include="Assets\Firebase\Plugins\Firebase.Auth.dll" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppApp-12_6_0.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppFunctions.dll" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\Firebase\Plugins\Firebase.Installations.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-installations-unity\maven-metadata.xml" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\Firebase\Plugins\Firebase.Database.dll" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-config-unity\maven-metadata.xml" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-analytics-unity\maven-metadata.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Auth.dll" />
-    <None Include="Assets\Firebase\Plugins\Firebase.Crashlytics.dll" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Firebase\Plugins\Firebase.Firestore.dll" />
-    <None Include="Assets\Firebase\Plugins\Firebase.AppCheck.dll" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Crashlytics.dll" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Database.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Firebase\Plugins\Firebase.Platform.dll" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.DynamicLinks.dll" />
-    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppRemoteConfig.dll" />
-    <None Include="Assets\Firebase\Plugins\Firebase.RemoteConfig.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-crashlytics-unity\maven-metadata.xml" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\Firebase\Plugins\Firebase.Storage.dll" />
-    <None Include="Assets\Firebase\Plugins\Google.MiniJson.dll" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Storage.dll" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-dynamic-links-unity\maven-metadata.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Firebase\Plugins\iOS\Firebase.App.dll" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-storage-unity\maven-metadata.xml" />
-    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-appcheck-unity\maven-metadata.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\Plugins\Plugins\WSA\x86\sqlite3.dll" />
+    <None Include="Assets\Plugins\WSA\ARM\sqlite3.dll" />
+    <None Include="Assets\Plugins\Plugins\WSA\ARM\sqlite3.dll" />
+    <None Include="Assets\Plugins\x86\sqlite3.dll" />
+    <None Include="Assets\Plugins\Plugins\x64\sqlite3.dll" />
+    <None Include="Assets\Plugins\WSA\x64\sqlite3.dll" />
+    <None Include="Assets\Plugins\Plugins\x86\sqlite3.dll" />
+    <None Include="Assets\Plugins\WSA\x86\sqlite3.dll" />
+    <None Include="Assets\Plugins\x86_64\sqlite3_x64.dll" />
+    <None Include="Assets\Plugins\x64\sqlite3.dll" />
+    <None Include="Assets\Plugins\SqliteForUnity3D.dll" />
+    <None Include="Assets\Plugins\SQLite4Unity3d-master(1)\SQLite4Unity3d-master\Example\Assets\Plugins\x86\sqlite3.dll" />
+    <None Include="Assets\Plugins\SQLite4Unity3d-master(1)\SQLite4Unity3d-master\Example\Assets\Plugins\WSA\ARM\sqlite3.dll" />
+    <None Include="Assets\Plugins\SQLite4Unity3d-master(1)\SQLite4Unity3d-master\Example\Assets\Plugins\x64\sqlite3.dll" />
+    <None Include="Assets\Plugins\SQLite4Unity3d-master(1)\SQLite4Unity3d-master\Example\Assets\Plugins\WSA\x86\sqlite3.dll" />
+    <None Include="Assets\Plugins\sqlite3.dll" />
+    <None Include="Assets\Plugins\Plugins\WSA\x64\sqlite3.dll" />
+    <None Include="Assets\Plugins\SQLite4Unity3d-master(1)\SQLite4Unity3d-master\Example\Assets\Plugins\WSA\x64\sqlite3.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

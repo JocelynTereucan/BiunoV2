@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/inicio/inicio.unity"
     guid: 0a7a7d34bad6e6c4dade6271563982d4
+  - enabled: 1
+    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/actividad1/PantallaDatos.unity"
+    guid: 62ed09ab144d81a4f8609631b28f57c1
   m_configObjects: {}
