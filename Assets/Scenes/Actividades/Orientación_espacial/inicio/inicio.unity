@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   escenaActividad: Actividad1
-  tiempoPantallaInicial: 10
+  tiempoPantallaInicial: 8
 --- !u!1 &1522823580
 GameObject:
   m_ObjectHideFlags: 0
