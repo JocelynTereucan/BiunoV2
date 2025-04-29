@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\Assembly-CSharp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\Assembly-CSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\Assembly-CSharp.csproj",
+        "projectName": "Assembly-CSharp",
+        "projectPath": "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\Assembly-CSharp.csproj",
+        "packagesPath": "C:\\Users\\tereu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\Temp\\obj\\Debug\\Assembly-CSharp\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tereu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\FirebaseMessagingActivityGenerator.csproj": {
+                "projectPath": "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\FirebaseMessagingActivityGenerator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\FirebaseMessagingActivityGenerator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\FirebaseMessagingActivityGenerator.csproj",
+        "projectName": "FirebaseMessagingActivityGenerator",
+        "projectPath": "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\FirebaseMessagingActivityGenerator.csproj",
+        "packagesPath": "C:\\Users\\tereu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tereu\\OneDrive\\Escritorio\\UACH\\TESIS\\Biuno-V2\\BiunoV2\\Temp\\obj\\Debug\\FirebaseMessagingActivityGenerator\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tereu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

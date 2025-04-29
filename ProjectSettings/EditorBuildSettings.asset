@@ -9,12 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/actividad1/Actividad1.unity"
-    guid: e2b700c53364f004598aca888c116a2a
+    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/instruccion1/Instruccion1.unity"
+    guid: 3dd89f2f313cb26449779cc45ad896c1
   - enabled: 1
-    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/inicio/inicio.unity"
+    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/actividad_1/Actividad1.unity"
+    guid: 9bf03f6d957af964f809ac1ddbe5b810
+  - enabled: 1
+    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/actividad_2/Actividad2.unity"
+    guid: e3d791cf1e53e1e48ae206f81fa1aeb1
+  - enabled: 1
+    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/instruccion2/Instruccion2.unity"
     guid: 0a7a7d34bad6e6c4dade6271563982d4
   - enabled: 1
-    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/actividad1/PantallaDatos.unity"
-    guid: 62ed09ab144d81a4f8609631b28f57c1
+    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/actividad_3/Actividad3.unity"
+    guid: e2b700c53364f004598aca888c116a2a
+  - enabled: 1
+    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/actividad_4/Actividad4.unity"
+    guid: eeec211697cd43746b81ee251429f41a
+  - enabled: 1
+    path: "Assets/Scenes/Actividades/Orientaci\xF3n_espacial/actividad_5/Actividad5.unity"
+    guid: d7c561dc297217142b1460ef7053b007
   m_configObjects: {}
