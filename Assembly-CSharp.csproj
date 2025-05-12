@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\antiguo\LoginManager.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_3\DatabaseManager.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_1\controlador_imagenes.cs" />
+    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_1\Actividad1Resultado.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Firebase\Plugins\iOS\Firebase.Functions.dll" />

@@ -14,7 +14,7 @@ public class DatabaseManager : MonoBehaviour
         string dbPath = Path.Combine(Application.persistentDataPath, "mydatabase.db");
         _connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create);
         _connection.CreateTable<ZonaEvaluacion>();
-        Debug.Log("Tabla creada exitosamente.");
+        //Debug.Log("Tabla creada exitosamente.");
 
         if (!_connection.Table<ZonaEvaluacion>().Any())
         {
@@ -54,11 +54,11 @@ public class DatabaseManager : MonoBehaviour
                 yMax = 1080f
             });
 
-            Debug.Log("Zonas insertadas correctamente.");
+            //Debug.Log("Zonas insertadas correctamente.");
         }
         else
         {
-            Debug.Log("La tabla ya contiene datos. No se insertaron duplicados.");
+            //Debug.Log("La tabla ya contiene datos. No se insertaron duplicados.");
             ActualizarZonas();
         }
     }
@@ -85,7 +85,7 @@ public class DatabaseManager : MonoBehaviour
         float bottom = pos.y - size.y / 2f;
 
 
-        Debug.Log($"[DEBUG] Rectángulo del cubo: L:{left}, R:{right}, T:{top}, B:{bottom}");
+        //Debug.Log($"[DEBUG] Rectángulo del cubo: L:{left}, R:{right}, T:{top}, B:{bottom}");
 
         var zonas = _connection.Table<ZonaEvaluacion>().ToList();
 
@@ -99,7 +99,7 @@ public class DatabaseManager : MonoBehaviour
             float ySolapado = Mathf.Max(0, Mathf.Min(top, zona.yMax) - Mathf.Max(bottom, zona.yMin));
             float areaSolapada = xSolapado * ySolapado;
 
-            Debug.Log($"[DEBUG] Solapamiento con {zona.nombre}: {areaSolapada}");
+            //Debug.Log($"[DEBUG] Solapamiento con {zona.nombre}: {areaSolapada}");
             detalles += $"📐 Solapamiento con {zona.nombre}: {areaSolapada}\n";
             if (areaSolapada > mayorSolapamiento)
             {
@@ -110,7 +110,7 @@ public class DatabaseManager : MonoBehaviour
         detalles += $"\n✅ Evaluación final: {zonaGanadora}";
         ResultadoEvaluacion.ZonaFinal = zonaGanadora;
         ResultadoEvaluacion.DetallesEvaluacion = detalles;
-        Debug.Log($"✅ Evaluación: {zonaGanadora}");
+        //Debug.Log($"✅ Evaluación: {zonaGanadora}");
     }
 
     private Vector2 ObtenerPosicionEnCanvas(Vector3 posicionMundo)
@@ -174,12 +174,12 @@ public class DatabaseManager : MonoBehaviour
                 existente.yMin = zona.yMin;
                 existente.yMax = zona.yMax;
                 _connection.Update(existente);
-                Debug.Log($"✅ Zona actualizada: {zona.nombre}");
+                //Debug.Log($"✅ Zona actualizada: {zona.nombre}");
             }
             else
             {
                 _connection.Insert(zona);
-                Debug.Log($"➕ Zona insertada: {zona.nombre}");
+                //Debug.Log($"➕ Zona insertada: {zona.nombre}");
             }
         }
     }
