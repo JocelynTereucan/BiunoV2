@@ -483,6 +483,8 @@ MonoBehaviour:
   imagenNormal: {fileID: 21300000, guid: b277336acc7881e4d9676e11bd7d17da, type: 3}
   imagenTachada: {fileID: 21300000, guid: d95d372063341b044bdb06a617d91523, type: 3}
   controlador: {fileID: 436307513}
+  opcionNombre: 
+  esCorrecta: 0
 --- !u!1 &436307511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,7 +1107,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 436307513}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Control_image, Assembly-CSharp
         m_MethodName: IrASiguienteActividad
         m_Mode: 1
@@ -1453,6 +1455,8 @@ MonoBehaviour:
   imagenNormal: {fileID: 21300000, guid: 593c1f233931b614a829e8dfa9b05b50, type: 3}
   imagenTachada: {fileID: 21300000, guid: d8fad7040d63eb9458584aa667bc0ee0, type: 3}
   controlador: {fileID: 436307513}
+  opcionNombre: 
+  esCorrecta: 0
 --- !u!1 &1476967489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,7 +1731,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 436307513}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Control_image, Assembly-CSharp
         m_MethodName: ReiniciarSeleccion
         m_Mode: 1

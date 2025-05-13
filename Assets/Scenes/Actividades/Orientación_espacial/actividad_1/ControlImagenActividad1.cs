@@ -1,9 +1,9 @@
 using UnityEngine;
-using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
+using System.Collections;
 
-public class ControladorImagenes : MonoBehaviour
+public class ControlImagenActividad1 : MonoBehaviour
 {
     private CambiarImagen imagenSeleccionada;
     public GameObject panelConfirmacion;
@@ -11,7 +11,6 @@ public class ControladorImagenes : MonoBehaviour
     private Coroutine esperaConfirmacion;
 
     private string resultado = "Competente";
-
     private float tiempoInicio;
     private int cantidadReproducciones = 0;
     private string respuestaSeleccionada = "";
@@ -72,7 +71,7 @@ public class ControladorImagenes : MonoBehaviour
     {
         float duracion = Time.time - tiempoInicio;
 
-        Actividad1Resultado resultadoData = new Actividad1Resultado
+        ResultadoActividades resultadoData = new ResultadoActividades("Actividad 1")
         {
             childId = "child_001",
             respuestaSeleccionada = respuestaSeleccionada,
@@ -84,62 +83,15 @@ public class ControladorImagenes : MonoBehaviour
         };
 
         Debug.Log("📦 Resultado creado, enviando antes de cambiar de escena...");
-
         yield return StartCoroutine(EnviarResultado(resultadoData));
 
-        Debug.Log("➡️ Cambio de escena tras envío exitoso o fallo");
         SceneManager.LoadScene("Actividad2");
     }
 
-
-    private void GuardarResultado()
-    {
-        Debug.Log("🧠 GuardarResultado() fue llamado");
-
-        float duracion = Time.time - tiempoInicio;
-
-        Actividad1Resultado resultadoData = new Actividad1Resultado
-        {
-            childId = "child_001",
-            respuestaSeleccionada = respuestaSeleccionada,
-            esCorrecta = (respuestaSeleccionada == "abajo"),
-            duracionSegundos = duracion,
-            vecesEscuchoInstruccion = cantidadReproducciones,
-            timestamp = System.DateTime.UtcNow.ToString("o"),
-            imagenBase64 = "" // La imagen se omitirá por ahora
-        };
-
-        Debug.Log("📦 Resultado creado, preparando envío sin imagen...");
-        // StartCoroutine(CapturarYEnviarResultado(resultadoData)); // Comentado por ahora
-        StartCoroutine(EnviarResultado(resultadoData)); // Envío directo sin imagen
-    }
-
-    /*
-    // Este método queda comentado temporalmente
-    private IEnumerator CapturarYEnviarResultado(Actividad1Resultado resultadoData)
-    {
-        yield return new WaitForEndOfFrame();
-
-        Debug.Log("📸 Capturando pantalla...");
-        Texture2D screenImage = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
-        screenImage.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
-        screenImage.Apply();
-
-        byte[] imageBytes = screenImage.EncodeToPNG();
-        string imagenBase64 = System.Convert.ToBase64String(imageBytes);
-        resultadoData.imagenBase64 = imagenBase64;
-
-        Destroy(screenImage);
-
-        Debug.Log("🚀 Preparando envío al servidor...");
-        StartCoroutine(EnviarResultado(resultadoData));
-    }
-    */
-
-    private IEnumerator EnviarResultado(Actividad1Resultado resultadoData)
+    private IEnumerator EnviarResultado(ResultadoActividades resultadoData)
     {
         string jsonData = JsonUtility.ToJson(resultadoData);
-        Debug.Log("📤 Enviando JSON al servidor: " + jsonData.Substring(0, Mathf.Min(300, jsonData.Length)));
+        Debug.Log("📤 Enviando JSON al servidor: " + jsonData);
 
         byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(jsonData);
         UnityWebRequest request = new UnityWebRequest(urlServidor, "POST");
@@ -147,19 +99,15 @@ public class ControladorImagenes : MonoBehaviour
         request.downloadHandler = new DownloadHandlerBuffer();
         request.SetRequestHeader("Content-Type", "application/json");
 
-        Debug.Log("🌐 Enviando request a: " + urlServidor);
-
         yield return request.SendWebRequest();
 
         if (request.result == UnityWebRequest.Result.Success)
         {
-            Debug.Log("✅ Respuesta recibida del servidor: " + request.downloadHandler.text);
+            Debug.Log("✅ Datos enviados exitosamente: " + request.downloadHandler.text);
         }
         else
         {
             Debug.LogError("❌ Error al enviar datos: " + request.error);
-            Debug.LogError("🧾 Código de respuesta: " + request.responseCode);
-            Debug.LogError("📝 Mensaje del servidor (si hay): " + request.downloadHandler.text);
         }
     }
 }

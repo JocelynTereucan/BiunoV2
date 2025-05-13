@@ -1,11 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Camb_Image : MonoBehaviour
+public class CambiarImagen : MonoBehaviour
 {
     public Sprite imagenNormal;
     public Sprite imagenTachada;
-    public Control_image controlador;
+    public ControlImagenActividad1 controlador;
+
+    [Header("Configuración de la opción")]
+    public string opcionNombre;
+    public bool esCorrecta;
 
     private Image imagenActual;
     private bool estaTachado = false;

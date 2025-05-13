@@ -1,7 +1,7 @@
 [System.Serializable]
-public class Actividad1Resultado
+public class ResultadoActividades
 {
-    public string actividadId;
+    public string actividad;
     public string childId;
     public string respuestaSeleccionada;
     public bool esCorrecta;
@@ -10,8 +10,8 @@ public class Actividad1Resultado
     public string timestamp;
     public string imagenBase64;
 
-    public Actividad1Resultado()
+    public ResultadoActividades(string actividad)
     {
-        actividadId = "Actividad1"; // ¡Esto asegura que se envía!
+        this.actividad = actividad;
     }
 }

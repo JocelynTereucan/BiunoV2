@@ -66,27 +66,29 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\antiguo\RecuperarContraseña.cs" />
     <Compile Include="Assets\Scripts\antiguo\InputFieldHandler.cs" />
+    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_2\CambiarImagenActividad2.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_3\ArrastrarObjeto.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_3\ResultadoEvaluacion.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_1\cambio_imagen.cs" />
+    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_2\DatosSesion_A2.cs" />
     <Compile Include="Assets\Scripts\antiguo\AppManager.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_4\arrastrable.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\ControlPantallasOrientacion.cs" />
+    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_1\CambiarImagen.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_3\VolverAPantalla.cs" />
+    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_2\ControlImageActividad2.cs" />
     <Compile Include="Assets\Scripts\antiguo\GestorPantallas.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_5\ArrastrarPato.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_2\control_image.cs" />
+    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_1\DatosSesion_A1.cs" />
     <Compile Include="Assets\Scripts\antiguo\MostrarContraseña.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\instruccion2\audio\ReproductorAudio.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_4\Audios_act4.cs" />
+    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_1\ControlImagenActividad1.cs" />
     <Compile Include="Assets\Scripts\antiguo\recordad_credenciales.cs" />
+    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\ResultadoActividades.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\admin_resultados.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_2\cambio_imagen2.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_3\MostrarResultado.cs" />
     <Compile Include="Assets\Scripts\antiguo\LoginManager.cs" />
     <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_3\DatabaseManager.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_1\controlador_imagenes.cs" />
-    <Compile Include="Assets\Scenes\Actividades\Orientación_espacial\actividad_1\Actividad1Resultado.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Firebase\Plugins\iOS\Firebase.Functions.dll" />
