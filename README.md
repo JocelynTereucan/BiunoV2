@@ -1,8 +1,46 @@
 Proyecto de tesis "Plataforma Interactiva para la Evaluación Visomotora en Niños"
 
-La evaluación de habilidades visomotoras en niños es fundamental para detectar dificultades en el desarrollo motor y cognitivo. Actualmente estas evaluaciones se realizan por medio de la observación del especialista al niño de forma individual, lo que suele ser limitante en tiempo, registros y avances. Lo que busca este proyecto es mejorar este proceso mediante la incorporación tecnología.
-El objetivo principal es crear una herramienta que facilite la evaluación de las habilidades visomotoras en niños de manera lúdica y precisa, utilizando tecnologías modernas para el reconocimiento de patrones y almacenamiento de datos que permitan el seguimiento individualizado del progreso de cada niño.
-Se desarrollará un software, que permita capturar el trazo, los dibujos y las selecciones del niño, mediante la pantalla táctil de un dispositivo móvil, la plataforma será capaz de reconocer los movimientos realizados, capturando y almacenando los datos en una base de datos para realizar un análisis de ellos y posterior a esto entregar un informe de la actividad realizada, guardando los avances de cada niño en un perfil individual permitiendo monitorear progreso a lo largo de un tiempo determinado, desde múltiples dispositivos para facilitar el apoyo familiar y aprendizaje más rápido de lo habitual.
-A diferencia de las aplicaciones existentes, este proyecto esta enfocado para el uso educacional en el aula, como apoyo docente que permita evaluaciones grupales en lugar de individuales. Esto reduce significativamente el tiempo y recursos necesarios para las evaluaciones. Además, al incorporar tecnologías de análisis, el sistema ofrece más precisión, superando las limitaciones de los métodos tradicionales y otras herramientas digitales.
-Al facilitar las evaluaciones grupales, se reducen los tiempos y costos asociados a ellas. Y se promueve la participación familiar en el desarrollo del niño, potenciando avances más rápidos y significativos en sus habilidades. Esto contribuye a una educación más inclusiva y efectiva. Esta herramienta incorporará tecnologías de reconocimiento de patrones y análisis de datos, aportando innovación al campo de la evaluación infantil y permitiendo nuevas investigaciones que incorporen nuevas herramientas que mejoren el desarrollo infantil en la etapa preescolar.
+# 🎨 Evaluación de Habilidades Visomotoras en Niños
 
+> Una herramienta digital para la evaluación lúdica, precisa y grupal del desarrollo psicomotor en la etapa preescolar.
+
+## 📄 Descripción del Proyecto
+
+La evaluación de habilidades visomotoras es fundamental para detectar tempranamente dificultades en el desarrollo motor y cognitivo de los niños. Tradicionalmente, este proceso depende de la observación individual por parte de un especialista, lo cual conlleva limitaciones en tiempo, gestión de registros y seguimiento de avances.
+
+Este proyecto busca **transformar este proceso mediante la tecnología**, creando una herramienta que digitaliza y optimiza la evaluación. A través de un software móvil, capturamos trazos y dibujos para realizar un análisis basado en datos, permitiendo evaluaciones grupales en el aula y un seguimiento detallado del progreso.
+
+## 🎯 Objetivos Principales
+
+* **Evaluación Lúdica:** Realizar pruebas mediante juegos y actividades atractivas para el niño.
+* **Precisión Tecnológica:** Utilizar algoritmos de reconocimiento de patrones para analizar trazos y selecciones.
+* **Eficiencia en el Aula:** Permitir evaluaciones grupales en lugar de individuales, optimizando el tiempo docente.
+* **Participación Familiar:** Facilitar el acceso a los progresos desde múltiples dispositivos para involucrar a la familia.
+
+## ✨ Características Clave
+
+* **📱 Captura Digital de Trazos:** Uso de pantallas táctiles de dispositivos móviles para registrar dibujos y movimientos con alta precisión.
+* **🧠 Reconocimiento de Patrones:** Análisis automático de los movimientos realizados para detectar niveles de desarrollo visomotor.
+* **📊 Análisis y Reportes:** Generación de informes automáticos basados en los datos almacenados.
+* **👤 Perfiles Individualizados:** Base de datos que guarda el historial de cada niño para monitorear su evolución a lo largo del tiempo.
+* **☁️ Acceso Multiplataforma:** Sistema accesible desde diversos dispositivos para docentes y tutores.
+
+## 🚀 Diferenciación e Innovación
+
+A diferencia de las aplicaciones existentes, este proyecto está **enfocado específicamente para el uso educacional en el aula**.
+
+| Método Tradicional / Otras Apps | Nuestra Solución |
+| :--- | :--- |
+| Evaluaciones "uno a uno" (lentas). | **Evaluaciones grupales** simultáneas. |
+| Registros manuales o dispersos. | **Almacenamiento centralizado** y análisis de datos. |
+| Subjetividad en la observación. | **Precisión basada en reconocimiento** de patrones. |
+| Proceso aislado. | **Integración familiar** en el proceso de aprendizaje. |
+
+## 🌟 Impacto Esperado
+
+1.  **Reducción de Costos y Tiempo:** Minimiza los recursos necesarios para realizar evaluaciones masivas.
+2.  **Educación Inclusiva:** Permite detecciones tempranas para potenciar avances más rápidos y significativos.
+3.  **Investigación:** Aporta datos valiosos para futuras investigaciones en el campo del desarrollo infantil preescolar.
+
+---
+*Este proyecto busca aportar innovación al campo de la evaluación infantil, superando las limitaciones de los métodos tradicionales.*
